@@ -29,7 +29,7 @@ public class Sum {
 			return;
 		}
 
-		// 引数によって変数の値を変更する
+		// 引数（読み込むログの種類）によって出力先ファイルを変更する
 		if (args[0].equals("access")) {
 			filePath = directory + "access_log.csv";
 			summary_filePath = directory + "summary.log";
@@ -47,6 +47,7 @@ public class Sum {
 		System.out.println("\n ### Log summarize start... [target log file:"
 				+ filePath + "] ###\n");
 
+		// ここから読み込み処理
 		FileReader fr = null;
 		BufferedReader br = null;
 		try {
