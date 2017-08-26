@@ -10,6 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TreeSet;
 
+// ログファイルをパースし、集計値を表示するクラス
 public class Sum {
 	public static void main(String[] args) {
 
@@ -19,7 +20,7 @@ public class Sum {
 		// filePath = args[0];
 		// String directory = "C:/isucon/";
 		String directory = "/home/isucon/log/";
-		String renamed_filePath = directory + "access_log2.csv";
+		String renamed_filePath = directory + "1_nginx_access_log.csv";
 
 		// 引数nullチェック
 		int length = args.length;
